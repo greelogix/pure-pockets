@@ -21,21 +21,40 @@ class DashboardView extends GetView<DashboardController> {
         backgroundColor: const Color(0xFFF0F2F5),
         appBar: AppBar(
           leading: IconButton(
-            icon: Icon(Icons.language_rounded, size: 20.sp),
+            icon: Icon(Icons.language_rounded, size: 20.sp,color: Color(0xFF00008b)),
             onPressed: () => Get.toNamed(Routes.ALL_MONTHS),
           ),
-          title: Text('Pure Pockets', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.sp, letterSpacing: 0.5)),
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                width: 5.h,
+              ),
+              Text('Pure ',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16.sp,
+                      color: Colors.blue,
+                      letterSpacing: 0.5)),
+              Text('Pockets',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16.sp,
+                      color: Color(0xFF00008b),
+                      letterSpacing: 0.5)),
+            ],
+          ),
           centerTitle: true,
           backgroundColor: Colors.white,
           foregroundColor: Colors.black,
           elevation: 0,
           actions: [
             IconButton(
-              icon: Icon(Icons.insights_rounded, size: 20.sp),
+              icon: Icon(Icons.insights_rounded, size: 20.sp,color: Colors.blue),
               onPressed: () => Get.toNamed(Routes.ANALYTICS),
             ),
             IconButton(
-              icon: Icon(Icons.settings_rounded, size: 20.sp),
+              icon: Icon(Icons.settings_rounded, size: 20.sp,color: Colors.blue,),
               onPressed: () => Get.toNamed(Routes.SETTINGS),
               tooltip: 'Settings',
             ),
