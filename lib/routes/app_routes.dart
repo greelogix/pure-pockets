@@ -4,7 +4,6 @@ abstract class Routes {
   static const ONBOARDING = _Paths.ONBOARDING;
   static const DASHBOARD = _Paths.DASHBOARD;
   static const TRANSACTION_ENTRY = _Paths.TRANSACTION_ENTRY;
-  static const GROUP_SPLITTER = _Paths.GROUP_SPLITTER;
   static const REVIEW_EXTRACTION = _Paths.REVIEW_EXTRACTION;
   static const HISTORY = _Paths.HISTORY;
   static const ANALYTICS = _Paths.ANALYTICS;
@@ -18,7 +17,6 @@ abstract class _Paths {
   static const ONBOARDING = '/onboarding';
   static const DASHBOARD = '/dashboard';
   static const TRANSACTION_ENTRY = '/transaction-entry';
-  static const GROUP_SPLITTER = '/group-splitter';
   static const REVIEW_EXTRACTION = '/review-extraction';
   static const HISTORY = '/history';
   static const ANALYTICS = '/analytics';

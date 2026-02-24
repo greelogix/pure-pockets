@@ -7,8 +7,6 @@ import '../modules/dashboard/binding.dart';
 import '../modules/dashboard/view.dart';
 import '../modules/transaction_entry/binding.dart';
 import '../modules/transaction_entry/view.dart';
-import '../modules/group_splitter/binding.dart';
-import '../modules/group_splitter/view.dart';
 import '../modules/review_extraction/binding.dart';
 import '../modules/review_extraction/view.dart';
 import '../modules/history/binding.dart';
@@ -46,11 +44,6 @@ class AppPages {
       name: Routes.TRANSACTION_ENTRY,
       page: () => const TransactionEntryView(),
       binding: TransactionEntryBinding(),
-    ),
-    GetPage(
-      name: Routes.GROUP_SPLITTER,
-      page: () => const GroupSplitterView(),
-      binding: GroupSplitterBinding(),
     ),
     GetPage(
       name: Routes.REVIEW_EXTRACTION,
